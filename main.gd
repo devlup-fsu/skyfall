@@ -30,7 +30,7 @@ func _on_spawn_timer_timeout():
 		spawn_object()
 	
 func spawn_object():
-	var newObj: RigidBody3D = object.instantiate()
+	var newObj: Node3D = object.instantiate()
 	add_child(newObj)
 	newObj.hit.connect(hit)
 	newObj.global_position = Vector3(randf_range(-5.5, 5.5), 50, randf_range(-5.5, 5.5))
@@ -55,6 +55,6 @@ func _on_area_3d_body_entered(body):
 	if body is Player and alive:
 		hit()
 	elif body is RigidBody3D:
-		body.queue_free()
+		body.get_parent_node_3d().queue_free()
 		len(get_children())
 
