@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cp1aus3t5g4tc"]
+[gd_scene load_steps=5 format=3 uid="uid://cp1aus3t5g4tc"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_yobj7"]
+[ext_resource type="PackedScene" uid="uid://ce6s7lhi0m5wa" path="res://character/Chicken.glb" id="2_rlmhl"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fsk3w"]
 
@@ -14,4 +15,8 @@ script = ExtResource("1_yobj7")
 shape = SubResource("CapsuleShape3D_fsk3w")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("CapsuleMesh_ueybq")
+
+[node name="Chicken" parent="." instance=ExtResource("2_rlmhl")]
+transform = Transform3D(0.0357019, 0, -0.999362, 0, 1, 0, 0.999362, 0, 0.0357019, 0, -0.977726, 0)
