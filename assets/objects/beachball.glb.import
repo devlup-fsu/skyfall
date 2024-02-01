@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c0x06motiqeyy"
-path="res://.godot/imported/beachball.glb-cfe537e5a1b0668e4f876ddf2688f9ea.scn"
+path="res://.godot/imported/beachball.glb-cec40de39ebda17b14622de605c9ec75.scn"
 
 [deps]
 
-source_file="res://objects/beachball.glb"
-dest_files=["res://.godot/imported/beachball.glb-cfe537e5a1b0668e4f876ddf2688f9ea.scn"]
+source_file="res://assets/objects/beachball.glb"
+dest_files=["res://.godot/imported/beachball.glb-cec40de39ebda17b14622de605c9ec75.scn"]
 
 [params]
 

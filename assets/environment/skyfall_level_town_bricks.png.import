@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmksgjijca4d0"
-path.s3tc="res://.godot/imported/skyfall_level_town_bricks.png-c09dabe9b35578cbdd8af3f042dcd3a2.s3tc.ctex"
+uid="uid://j7k2l4xfu0uu"
+path.s3tc="res://.godot/imported/skyfall_level_town_bricks.png-5d4be7afcdf3685bce2ad34c02ff4c03.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://skyfall_level_town_bricks.png"
-dest_files=["res://.godot/imported/skyfall_level_town_bricks.png-c09dabe9b35578cbdd8af3f042dcd3a2.s3tc.ctex"]
+source_file="res://assets/environment/skyfall_level_town_bricks.png"
+dest_files=["res://.godot/imported/skyfall_level_town_bricks.png-5d4be7afcdf3685bce2ad34c02ff4c03.s3tc.ctex"]
 
 [params]
 

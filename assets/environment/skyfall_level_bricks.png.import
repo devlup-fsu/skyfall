@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccdhb14ra5g3c"
-path.s3tc="res://.godot/imported/Chicken_basecolor.png-b15b8b0c72a4f44af0d46d1bb7c82fee.s3tc.ctex"
+uid="uid://if6j0t46uoif"
+path.s3tc="res://.godot/imported/skyfall_level_bricks.png-0e87277a279413fcda08fef64ce4564a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://character/Chicken_basecolor.png"
-dest_files=["res://.godot/imported/Chicken_basecolor.png-b15b8b0c72a4f44af0d46d1bb7c82fee.s3tc.ctex"]
+source_file="res://assets/environment/skyfall_level_bricks.png"
+dest_files=["res://.godot/imported/skyfall_level_bricks.png-0e87277a279413fcda08fef64ce4564a.s3tc.ctex"]
 
 [params]
 

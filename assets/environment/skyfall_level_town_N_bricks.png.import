@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhvkm4nqothoc"
-path.s3tc="res://.godot/imported/Chicken_shirt-stripes.png-0a29aaeb1b3f5a102db2b59aff03e5c0.s3tc.ctex"
+uid="uid://7vwrebjid47m"
+path.s3tc="res://.godot/imported/skyfall_level_town_N_bricks.png-0f3ca89a985875c4386b8e21632776fd.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://character/Chicken_shirt-stripes.png"
-dest_files=["res://.godot/imported/Chicken_shirt-stripes.png-0a29aaeb1b3f5a102db2b59aff03e5c0.s3tc.ctex"]
+source_file="res://assets/environment/skyfall_level_town_N_bricks.png"
+dest_files=["res://.godot/imported/skyfall_level_town_N_bricks.png-0f3ca89a985875c4386b8e21632776fd.s3tc.ctex"]
 
 [params]
 
@@ -21,12 +21,12 @@ compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://assets/environment/skyfall_level_town_N_bricks.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

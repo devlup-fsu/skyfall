@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dc8fcclqaji1t"
-path="res://.godot/imported/box.glb-c3f2f4dbf12e1062440c98d39602903b.scn"
+uid="uid://b5dhm22i84ykn"
+path="res://.godot/imported/wheel.glb-31972d95ee7494b6989cf45b8122c82b.scn"
 
 [deps]
 
-source_file="res://objects/box.glb"
-dest_files=["res://.godot/imported/box.glb-c3f2f4dbf12e1062440c98d39602903b.scn"]
+source_file="res://assets/objects/wheel.glb"
+dest_files=["res://.godot/imported/wheel.glb-31972d95ee7494b6989cf45b8122c82b.scn"]
 
 [params]
 

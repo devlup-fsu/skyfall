@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://bbih0qxro67if"]
 
-[ext_resource type="PackedScene" uid="uid://c5knqpsq226fd" path="res://skyfall_level.glb" id="1_qpejj"]
-[ext_resource type="PackedScene" uid="uid://d8tlkyllw27o" path="res://skyfall_level_town.glb" id="3_66pjy"]
 [ext_resource type="Script" path="res://fan_spin.gd" id="3_u7wje"]
-[ext_resource type="PackedScene" uid="uid://bydthsaj0qhwf" path="res://skyfall_level_fan.glb" id="4_p0ml5"]
+[ext_resource type="PackedScene" uid="uid://cchp6l0yjwxjr" path="res://background.tscn" id="4_3q5r0"]
+[ext_resource type="PackedScene" uid="uid://6t5xmjucdxbn" path="res://building.tscn" id="4_6y1c2"]
+[ext_resource type="PackedScene" uid="uid://bydthsaj0qhwf" path="res://assets/environment/skyfall_level_fan.glb" id="4_p0ml5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pqcry"]
 size = Vector3(10, 1, 10)
@@ -12,20 +12,15 @@ size = Vector3(10, 1, 10)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D"]
-transform = Transform3D(1.00092, 0, 0, 0, 1.00092, 0, 0, 0, 1.00092, 0, 0, 0)
-visible = false
-size = Vector3(10, 1, 10)
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("BoxShape3D_pqcry")
 
-[node name="skyfall_level_town" parent="StaticBody3D" instance=ExtResource("3_66pjy")]
+[node name="fan" parent="StaticBody3D" instance=ExtResource("4_p0ml5")]
+transform = Transform3D(4.62397e-08, 0.20392, -0.617184, 5.3956e-08, 0.617184, 0.20392, 0.65, -6.57384e-08, 2.6978e-08, 2.95738, -3.71715, 5.45379)
+script = ExtResource("3_u7wje")
+
+[node name="background_towers" parent="." instance=ExtResource("4_3q5r0")]
 transform = Transform3D(-4.37114e-08, 0, -2.44929, 0, 2.16708, 0, 1, 0, -1.07062e-07, 0.404169, -29.091, -8.52746)
 
-[node name="skyfall_level" parent="StaticBody3D" instance=ExtResource("1_qpejj")]
+[node name="building" parent="." instance=ExtResource("4_6y1c2")]
 transform = Transform3D(-2.84124e-08, 0, -0.65, 0, 0.65, 0, 0.65, 0, -2.84124e-08, 0, -4.48798, 0)
-
-[node name="skyfall_level_fan2" parent="StaticBody3D" instance=ExtResource("4_p0ml5")]
-transform = Transform3D(-2.84124e-08, 0.344448, 0.551231, 0, -0.551231, 0.344448, 0.65, 1.50563e-08, 2.40951e-08, 2.95738, -3.71715, 5.45379)
-script = ExtResource("3_u7wje")

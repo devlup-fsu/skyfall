@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bnf8o7i036184"]
 
 [ext_resource type="Script" path="res://object.gd" id="1_cafky"]
-[ext_resource type="AudioStream" uid="uid://cgcfgoflfoeqk" path="res://525101__jomse__plasticimpactb3.wav" id="2_xsgsj"]
+[ext_resource type="AudioStream" uid="uid://cgcfgoflfoeqk" path="res://assets/sound/525101__jomse__plasticimpactb3.wav" id="2_xsgsj"]
 
 [node name="object" type="Node3D"]
 script = ExtResource("1_cafky")

@@ -2,10 +2,10 @@ extends Node3D
 
 signal hit
 
-@onready var s_impact = preload("res://525101__jomse__plasticimpactb3.wav")
+@onready var s_impact = preload("res://assets/sound/525101__jomse__plasticimpactb3.wav")
 
 var objects = ['beachball', 'box', 'lamp', 'wheel']
-var res_format_string = "res://objects/%s.tscn"
+var res_format_string = "res://assets/objects/%s.tscn"
 var object: RigidBody3D
 var kill = true
 var impacted = false

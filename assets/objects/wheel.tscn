@@ -77,9 +77,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_5rkct")
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_koc07"]
-height = 0.624834
-radius = 1.01395
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x1hqx"]
+radius = 1.01497
+height = 2.05897
 
 [node name="wheel" type="RigidBody3D"]
 contact_monitor = true
@@ -96,4 +96,4 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.90613, 0, 0, 0, 0.0249686, -0.905786, 0, 0.905786, 0.0249686, 0, 0, 0)
-shape = SubResource("CylinderShape3D_koc07")
+shape = SubResource("CapsuleShape3D_x1hqx")

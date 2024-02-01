@@ -28,13 +28,13 @@ func _process(delta):
 func _on_spawn_timer_timeout():
 	if time > 0:
 		spawn_object()
-	
+
 func spawn_object():
 	var newObj: Node3D = object.instantiate()
 	add_child(newObj)
 	newObj.hit.connect(hit)
 	newObj.global_position = Vector3(randf_range(-5.5, 5.5), 50, randf_range(-5.5, 5.5))
-	
+	newObj.rotation_degrees = Vector3(randf_range(-90, 90), randf_range(-90, 90), randf_range(-90, 90))
 	# follow player, i think it's too hard:
 	# newObj.global_position = Vector3($player.position.x, 50, $player.position.z)
 	

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://if6j0t46uoif"
-path.s3tc="res://.godot/imported/skyfall_level_bricks.png-c0e6f1126d0b6beb7837187fc85cc8ac.s3tc.ctex"
+uid="uid://co6qnn0p4ntxs"
+path.s3tc="res://.godot/imported/skyfall_level_N_bricks.png-cd3ff795bdd56568d4636385b721c96e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://skyfall_level_bricks.png"
-dest_files=["res://.godot/imported/skyfall_level_bricks.png-c0e6f1126d0b6beb7837187fc85cc8ac.s3tc.ctex"]
+source_file="res://assets/environment/skyfall_level_N_bricks.png"
+dest_files=["res://.godot/imported/skyfall_level_N_bricks.png-cd3ff795bdd56568d4636385b721c96e.s3tc.ctex"]
 
 [params]
 
@@ -21,12 +21,12 @@ compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://skyfall_level_N_bricks.png"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkam0oyfg8bfm"
-path.s3tc="res://.godot/imported/Chicken_normal.png-7786bb017be9e7bfd8d466dabe11aaab.s3tc.ctex"
+uid="uid://ccdhb14ra5g3c"
+path.s3tc="res://.godot/imported/Chicken_basecolor.png-6f468a0d501bfe45fe997db045e823d0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://character/Chicken_normal.png"
-dest_files=["res://.godot/imported/Chicken_normal.png-7786bb017be9e7bfd8d466dabe11aaab.s3tc.ctex"]
+source_file="res://assets/character/Chicken_basecolor.png"
+dest_files=["res://.godot/imported/Chicken_basecolor.png-6f468a0d501bfe45fe997db045e823d0.s3tc.ctex"]
 
 [params]
 
@@ -21,12 +21,12 @@ compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://character/Chicken_normal.png"
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

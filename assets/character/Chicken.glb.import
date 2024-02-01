@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c5knqpsq226fd"
-path="res://.godot/imported/skyfall_level.glb-697c7deaaa02e067b74414a078d87e9a.scn"
+uid="uid://ce6s7lhi0m5wa"
+path="res://.godot/imported/Chicken.glb-d7736dabba44645a22d05d2a450df32b.scn"
 
 [deps]
 
-source_file="res://skyfall_level.glb"
-dest_files=["res://.godot/imported/skyfall_level.glb-697c7deaaa02e067b74414a078d87e9a.scn"]
+source_file="res://assets/character/Chicken.glb"
+dest_files=["res://.godot/imported/Chicken.glb-d7736dabba44645a22d05d2a450df32b.scn"]
 
 [params]
 

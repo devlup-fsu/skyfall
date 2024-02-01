@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d8tlkyllw27o"
-path="res://.godot/imported/skyfall_level_town.glb-9a9544218ef428c07ed9b040ad7c9ede.scn"
+uid="uid://dc8fcclqaji1t"
+path="res://.godot/imported/box.glb-3a2af6aaa9799f626e708f25dc092f90.scn"
 
 [deps]
 
-source_file="res://skyfall_level_town.glb"
-dest_files=["res://.godot/imported/skyfall_level_town.glb-9a9544218ef428c07ed9b040ad7c9ede.scn"]
+source_file="res://assets/objects/box.glb"
+dest_files=["res://.godot/imported/box.glb-3a2af6aaa9799f626e708f25dc092f90.scn"]
 
 [params]
 
