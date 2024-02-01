@@ -69,7 +69,7 @@ shader = ExtResource("5_vfaoo")
 material = SubResource("ShaderMaterial_hpu41")
 top_radius = 0.0
 bottom_radius = 10.029
-height = 81.569
+height = 94.902
 
 [node name="main" type="Node3D"]
 script = ExtResource("1_8bcrm")
@@ -152,15 +152,10 @@ vertical_alignment = 1
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.305928, -0.74899, 0.587726, 0, 0.617324, 0.786709, -0.952055, -0.240676, 0.188857, 0, 0, 0)
+light_color = Color(0.784314, 0.898039, 1, 1)
+light_energy = 0.42
 shadow_enabled = true
 shadow_bias = 0.0
-
-[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1.19249e-08, 1, 0, -1, 1.19249e-08, 0, 0, 0)
-visible = false
-light_color = Color(0.537255, 1, 0.517647, 1)
-light_energy = 0.63
-shadow_enabled = true
 
 [node name="SpawnTimer" type="Timer" parent="."]
 wait_time = 0.5

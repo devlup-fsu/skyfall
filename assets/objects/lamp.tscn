@@ -213,3 +213,6 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.655624, 0, 0, 0, 0.655624, 0, 0, 0, 0.655624, 0, -0.607456, 0)
 shape = SubResource("CylinderShape3D_idnnv")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00828314, 0.138017, -4.76837e-07)

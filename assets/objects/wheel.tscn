@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://clqjxq3kn6v5m"]
+[gd_scene load_steps=9 format=3 uid="uid://clqjxq3kn6v5m"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o4c0q"]
 resource_name = "Material"
@@ -78,8 +78,12 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_5rkct")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_x1hqx"]
-radius = 1.01497
-height = 2.05897
+radius = 0.705066
+height = 1.41013
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7weca"]
+height = 0.724331
+radius = 0.907138
 
 [node name="wheel" type="RigidBody3D"]
 contact_monitor = true
@@ -97,3 +101,7 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.90613, 0, 0, 0, 0.0249686, -0.905786, 0, 0.905786, 0.0249686, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_x1hqx")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_7weca")
