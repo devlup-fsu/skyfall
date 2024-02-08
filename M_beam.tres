@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://br4sy2tab42kj"]
+
+[ext_resource type="Shader" uid="uid://cujwx5pe0yoda" path="res://assets/environment/tractor_beam.tres" id="1_662uj"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_662uj")

@@ -1,11 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://cp1aus3t5g4tc"]
+[gd_scene load_steps=6 format=3 uid="uid://cp1aus3t5g4tc"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_yobj7"]
-[ext_resource type="PackedScene" uid="uid://ce6s7lhi0m5wa" path="res://assets/character/Chicken.glb" id="2_rlmhl"]
+[ext_resource type="PackedScene" uid="uid://faerioeyo3l8" path="res://player_model.tscn" id="3_kesqr"]
+[ext_resource type="Material" uid="uid://br4sy2tab42kj" path="res://M_beam.tres" id="3_wlr6h"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fsk3w"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_ueybq"]
+[sub_resource type="SphereMesh" id="SphereMesh_n12ki"]
+material = ExtResource("3_wlr6h")
+radius = 1.15
+height = 2.3
 
 [node name="player" type="CharacterBody3D"]
 floor_block_on_wall = false
@@ -15,9 +19,11 @@ script = ExtResource("1_yobj7")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_fsk3w")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-visible = false
-mesh = SubResource("CapsuleMesh_ueybq")
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, -1, 0)
 
-[node name="Chicken" parent="." instance=ExtResource("2_rlmhl")]
-transform = Transform3D(0.0357019, 0, -0.999362, 0, 1, 0, 0.999362, 0, 0.0357019, 0, -0.977726, 0)
+[node name="PlayerModel" parent="Node3D" instance=ExtResource("3_kesqr")]
+
+[node name="orb" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("SphereMesh_n12ki")

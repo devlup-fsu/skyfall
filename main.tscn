@@ -1,11 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://fybptm0p1tp0"]
+[gd_scene load_steps=17 format=3 uid="uid://fybptm0p1tp0"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_8bcrm"]
 [ext_resource type="PackedScene" uid="uid://bbih0qxro67if" path="res://level.tscn" id="1_jlwn7"]
 [ext_resource type="PackedScene" uid="uid://cp1aus3t5g4tc" path="res://player.tscn" id="2_qk7fg"]
 [ext_resource type="FontFile" uid="uid://bwmhxjxrqp5yd" path="res://assets/fonts/Dream MMA.ttf" id="4_rshkr"]
 [ext_resource type="AudioStream" uid="uid://c5m6bfic44e61" path="res://assets/sound/scfijam.mp3" id="5_napq4"]
-[ext_resource type="Shader" uid="uid://cujwx5pe0yoda" path="res://assets/environment/tractor_beam.tres" id="5_vfaoo"]
+[ext_resource type="Material" uid="uid://br4sy2tab42kj" path="res://M_beam.tres" id="5_yjprv"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_sei0p"]
 font = ExtResource("4_rshkr")
@@ -62,12 +62,8 @@ volumetric_fog_density = 0.007
 volumetric_fog_albedo = Color(0.2, 0.278431, 0.709804, 1)
 volumetric_fog_emission = Color(0.0705882, 0.423529, 0.141176, 1)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_hpu41"]
-render_priority = 0
-shader = ExtResource("5_vfaoo")
-
 [sub_resource type="CylinderMesh" id="CylinderMesh_2qo4o"]
-material = SubResource("ShaderMaterial_hpu41")
+material = ExtResource("5_yjprv")
 top_radius = 0.0
 bottom_radius = 10.029
 height = 94.902
@@ -179,7 +175,7 @@ skeleton = NodePath("../Camera3D")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_napq4")
-volume_db = -80.0
+volume_db = -12.0
 autoplay = true
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
