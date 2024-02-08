@@ -4,7 +4,7 @@ signal hit
 
 @onready var s_impact = preload("res://assets/sound/525101__jomse__plasticimpactb3.wav")
 
-var objects = ['beachball', 'box', 'lamp', 'wheel']
+var objects = ['beachball', 'box', 'lamp', 'wheel', 'monitor']
 var res_format_string = "res://assets/objects/%s.tscn"
 var object: RigidBody3D
 var kill = true
