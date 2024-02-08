@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://fybptm0p1tp0"]
+[gd_scene load_steps=18 format=3 uid="uid://fybptm0p1tp0"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_8bcrm"]
 [ext_resource type="PackedScene" uid="uid://bbih0qxro67if" path="res://level.tscn" id="1_jlwn7"]
@@ -14,6 +14,16 @@ font_color = Color(1, 0.2, 0.270588, 1)
 shadow_size = 15
 shadow_color = Color(0.972549, 0.972549, 0.972549, 0.52549)
 shadow_offset = Vector2(-5, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t1amf"]
+bg_color = Color(1, 0.2, 0.270588, 1)
+border_width_left = 5
+border_width_bottom = 5
+border_color = Color(0.654902, 0.654902, 0.654902, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 20
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 20
 
 [sub_resource type="LabelSettings" id="LabelSettings_ns4me"]
 font = ExtResource("4_rshkr")
@@ -129,6 +139,22 @@ text = "you died"
 label_settings = SubResource("LabelSettings_sei0p")
 horizontal_alignment = 1
 
+[node name="RestartButton" type="Button" parent="Camera3D/Control/CenterContainer/YOUDIE"]
+visible = false
+layout_mode = 0
+offset_left = 158.5
+offset_top = 120.0
+offset_right = 428.5
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0.819608, 0.819608, 0.819608, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.180392, 0.117647, 1)
+theme_override_fonts/font = ExtResource("4_rshkr")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_t1amf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_t1amf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_t1amf")
+text = "die again"
+
 [node name="Ready" type="Label" parent="Camera3D/Control/CenterContainer"]
 layout_mode = 2
 text = "get ready"
@@ -186,5 +212,6 @@ shadow_enabled = true
 spot_range = 100.0
 spot_angle = 20.0
 
+[connection signal="pressed" from="Camera3D/Control/CenterContainer/YOUDIE/RestartButton" to="." method="_on_restart_button_pressed"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

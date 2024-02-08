@@ -49,6 +49,7 @@ func hit():
 	alive = false
 	$player.alive = false
 	$Camera3D/Control/CenterContainer/YOUDIE.visible = true
+	$Camera3D/Control/CenterContainer/YOUDIE/RestartButton.visible = true
 
 
 func _on_area_3d_body_entered(body):
@@ -58,3 +59,7 @@ func _on_area_3d_body_entered(body):
 		body.get_parent_node_3d().queue_free()
 		len(get_children())
 
+
+
+func _on_restart_button_pressed():
+	get_tree().reload_current_scene()
